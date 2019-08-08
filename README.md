@@ -5,7 +5,8 @@ This is a Reddit bot that uses PRAW and the Reddit API to convert youtube video 
 
 The bot simply scans all new comments on the subreddit for "youtube.com" or "youtu.be" and if they are found, it sppends the path to "insidio.us" and makes a comment saying:
 
-```"Hey, I noticed you linked a YouTube video in your comment. For privacy, here are your links converted to invidio.us: 
+```
+"Hey, I noticed you linked a YouTube video in your comment. For privacy, here are your links converted to invidio.us: 
 
 link
 link
