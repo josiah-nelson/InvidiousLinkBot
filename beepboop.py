@@ -1,6 +1,5 @@
 import praw
 import config
-import re
 import urlextract
 import time
 import os
@@ -36,7 +35,7 @@ commentlist = file.readlines()
 def run_bot(r, comments_replied_to):
 	print("Searching last 10 comments")
 	for linkbase in linksearch:
-		for comment in r.subreddit('Trolysis').comments(limit=10):
+		for comment in r.subreddit('Privacy').comments(limit=10):
 			if linkbase in comment.body and comment.id not in comments_replied_to and comment.author != r.user.me() and comment.id not in commentlist:
 				print("String with " + linkbase + " found in comment " + comment.id)
 				links = extractor.find_urls(comment.body)
